@@ -1,0 +1,54 @@
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+}
+
+.brand-name {
+    text-decoration: none;
+    color: #fff;
+}
+
+.navbar-links {
+    list-style: none;
+    display: flex;
+}
+
+.navbar-links li {
+    margin-right: 20px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #fff;
+}
+
+.image-container {
+    margin-top: 20px;
+}
+
+.image-item {
+    margin-bottom: 20px; /* Add margin between items */
+    text-align: center;
+}
+
+.image-item img {
+    max-width: 100%; /* Ensure images don't exceed container width */
+    height: 200px; /* Set a fixed height for all images */
+}
+
+
+
