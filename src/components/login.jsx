@@ -16,7 +16,7 @@ const Login = () => {
         event.preventDefault();
 
         
-        axios.post('http://localhost:5000/auth/adminlogin', values)
+        axios.post('http://localhost:5000/', values)
             .then(result => {
                     navigate('/dashboard')
             })
