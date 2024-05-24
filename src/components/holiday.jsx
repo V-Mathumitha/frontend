@@ -5,7 +5,7 @@ const Holiday = () => {
     const domesticPackages = [
         { place: "Kerala", days: 5, amount: "$500", image: "/images/kerala.jpg" },
         { place: "Goa", days: 7, amount: "$700", image: "/images/goa.jpeg" },
-        { place: "Ooty", days: 3, amount: "$300", image: "/images/ooty.jpg" },
+       
         { place: "Jaipur", days: 4, amount: "$400", image: "/images/jaipur.jpg" },
         { place: "Kodaikanal", days: 6, amount: "$600", image: "/images/kodaikanal.jpg" },
         // Add more packages as needed

@@ -1,15 +1,16 @@
 import React from 'react';
 import './hotels.css';
 
+
 const Hotels = () => {
     const hotels = [
-        { place: "Sterling kodai,Kodaikannal", image: "/images/hotela.jpg" },
-        { place: "Fortune resort,ooty", image: "/images/hotelb.jpeg" },
-        { place: "Meadows,munnar", image: "/images/hoteld.jpg" },
-        { place: "sparrow,coimbatore", image: "/images/hotele.jpeg" },
-        { place: "The High,Jammu, Goa", image: "/images/hotelf.jpg" },
-        { place: "snow fall,Kashmir", image: "/images/hotelg.jpg" },
-        { place: "palace,Goa", image: "/images/hotelh.jpg" },
+        { place: "Sterling kodai,Kodaikannal", image: "../assets/hotela.jpg" },
+        { place: "Fortune resort,ooty", image: "/assets/hotelb.jpeg" },
+        { place: "Meadows,munnar", image: "/assets/hoteld.jpg" },
+        { place: "sparrow,coimbatore", image: "/assets/hotele.jpeg" },
+        { place: "The High,Jammu, Goa", image: "/assets/hotelf.jpg" },
+        
+        { place: "palace,Goa", image: "/assets/hotelh.jpg" },
         // Add more hotels as needed
     ];
 

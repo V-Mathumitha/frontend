@@ -15,13 +15,13 @@ const Home = () => {
                 
                 {/* Add more image items */}
                 <div className="image-item">
-                    <img src="/images/fun.jpg" alt="Image 2" />
+                    <img src="/images/change3.jpeg" alt="Image 2" />
                     <h3>Travelling is Fun!!!</h3>
                     <p>"Travelling is Fun!!!" captures the joy and excitement of embarking on new adventures. It's a celebration of discovery, where every moment becomes a cherished memory and every destination a playground for exploration</p>
                 </div>
                 
                 <div className="image-item">
-                    <img src="/images/voucher.jpg" alt="Image 3" />
+                    <img src="/images/ticket.jpeg" alt="Image 3" />
                     <h3>Free Flight Vouchers</h3>
                     <p>"Free Flight Vouchers" beckons with the promise of boundless possibilities, offering the gift of skyward adventures without constraints. It's an invitation to seize the skies, explore new horizons, and create unforgettable journeys, all on the wings of freedom.</p>
                 </div>

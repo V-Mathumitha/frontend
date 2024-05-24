@@ -46,3 +46,16 @@ li {
     text-align: left; /* Left align the text within each list item */
     display: inline-block; /* Display list items inline-block to keep them centered */
 }
+
+/* Adjust image paths */
+.service#culinary-services img {
+    content: url('../assets/food.jpg');
+}
+
+.service#entertainment img {
+    content: url('../assets/movies.jpg');
+}
+
+.service#internet img {
+    content: url('../assets/films.jpg');
+}

@@ -15,21 +15,19 @@ body {
     text-align: center;
 }
 
-h2 {
+.container h2 {
     color: #333;
     padding-bottom: 0.5rem;
     margin-bottom: 1.5rem;
 }
 
-h2 + h2 {
-    margin-top: 2rem; /* Add margin between the two sections */
-}
-
 .packages {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1rem;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 2rem;
+    overflow-x: auto;
+    white-space: nowrap;
 }
 
 .package {
@@ -39,6 +37,7 @@ h2 + h2 {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     width: 200px;
     text-align: center;
+    display: inline-block;
 }
 
 .package img.package-image {
@@ -47,15 +46,59 @@ h2 + h2 {
     border-radius: 8px;
 }
 
-.package h3 {
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
-    color: #333;
+/* Adjust image paths */
+.package img[src*="kerala.jpg"] {
+    content: url('../assets/kerala.jpg');
 }
 
-.package p {
-    margin: 0.25rem 0;
-    color: #666;
+.package img[src*="goa.jpeg"] {
+    content: url('../assets/goa.jpeg');
 }
 
 
+.package img[src*="jaipur.jpg"] {
+    content: url('../assets/jaipur.jpg');
+}
+
+.package img[src*="kodaikanal.jpg"] {
+    content: url('../assets/kodaikanal.jpg');
+}
+
+.package img[src*="singapore.jpg"] {
+    content: url('../assets/singapore.jpg');
+}
+
+.package img[src*="thailand.jpg"] {
+    content: url('../assets/thailand.jpg');
+}
+
+.package img[src*="nepal.jpg"] {
+    content: url('../assets/nepal.jpg');
+}
+
+.package img[src*="dubai.jpeg"] {
+    content: url('../assets/dubai.jpeg');
+}
+
+.package img[src*="maldives.jpg"] {
+    content: url('../assets/maldives.jpg');
+}
+
+/* Add format for all images */
+.package img[src*="kerala.jpg"],
+.package img[src*="goa.jpeg"],
+.package img[src*="jaipur.jpg"],
+.package img[src*="kodaikanal.jpg"],
+.package img[src*="singapore.jpg"],
+.package img[src*="thailand.jpg"],
+.package img[src*="nepal.jpg"],
+.package img[src*="dubai.jpeg"],
+.package img[src*="maldives.jpg"] {
+    width: 200px; /* Set fixed width for all images */
+    height: auto; /* Set auto height to maintain aspect ratio */
+    max-width: 100%; /* Ensure images don't exceed container width */
+    border-radius: 8px; /* Apply border radius to all images */
+    object-fit: cover; /* Maintain aspect ratio without stretching */
+}
+
+    

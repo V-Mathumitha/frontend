@@ -1,12 +1,14 @@
 import React from 'react';
 import './about.css';
 
+
+
 const About = () => {
     return (
         <div className="container">
             <div className="service" id="culinary-services">
                 <h2>Culinary Services</h2>
-                <img src="/images/food.jpg" alt="Culinary Services" />
+                <img src = '/images/food.jpg' alt="Culinary Services" /> 
                 <ul>
                     <li>Complimentary meals and snacks on board</li>
                     <li>A varied selection of free hot and cold beverages – both alcoholic and non-alcoholic</li>

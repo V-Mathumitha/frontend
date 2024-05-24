@@ -3,6 +3,8 @@ import './style.css';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 
+
+
 const Login = () => {
     const [values, setValues] = useState({
         email: '',
@@ -16,7 +18,7 @@ const Login = () => {
         event.preventDefault();
 
         
-        axios.post('http://localhost:5000/', values)
+        axios.post('http://localhost:5000/adminlogin', values)
             .then(result => {
                     navigate('/dashboard')
             })
@@ -66,5 +68,7 @@ const Login = () => {
 };
 
 export default Login;
+       
 
-           
+
+                            

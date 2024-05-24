@@ -50,7 +50,7 @@ const BookTickets = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:5000/auth/booktickets', formData);
+      const response = await axios.post('http://localhost:5000/booktickets', formData);
       console.log("Success: Ticket booked");
       console.log(response);
       setBookingDetails(response.data);

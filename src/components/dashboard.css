@@ -1,3 +1,11 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
 .dashboard-container {
     display: flex;
     flex-direction: column;
@@ -45,10 +53,46 @@
     text-align: center;
 }
 
+/* Set fixed width and height for all images */
 .image-item img {
+    width: 200px; /* Set fixed width for all images */
+    height: auto; /* Set auto height to maintain aspect ratio */
     max-width: 100%; /* Ensure images don't exceed container width */
-    height: 200px; /* Set a fixed height for all images */
+    object-fit: cover; /* Maintain aspect ratio without stretching */
 }
 
+/* Adjust image paths */
+.image-item img[src*="explore.jpeg"] {
+    content: url('../assets/explore.jpeg');
+}
 
+.image-item img[src*="change3.jpeg"] {
+    content: url('../assets/change3.jpeg');
+}
+
+.image-item img[src*="ticket.jpeg.jpg"] {
+    content: url('../assets/voucher.jpg');
+}
+
+.image-item img[src*="complimentary.jpg"] {
+    content: url('../assets/complimentary.jpeg');
+}
+
+.image-item img[src*="save.jpeg"] {
+    content: url('../assets/save.jpeg');
+}
+
+/* Add format for all images in the dashboard */
+/* Add format for all images in the dashboard */
+.image-item img[src*="explore.jpeg"],
+.image-item img[src*="change3.jpeg"],
+.image-item img[src*="ticket.jpeg"],
+.image-item img[src*="complimentary.jpg"],
+.image-item img[src*="save.jpeg"] {
+    width: 200px; /* Set fixed width for all images */
+    height: auto; /* Set auto height to maintain aspect ratio */
+    max-width: 100%; /* Ensure images don't exceed container width */
+    border-radius: 8px; /* Apply border radius to all images */
+    object-fit: cover; /* Maintain aspect ratio without stretching */
+}
 
